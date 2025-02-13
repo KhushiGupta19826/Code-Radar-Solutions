@@ -2,5 +2,7 @@
 int main(){
     char a;
     scanf("%c", &a);
-    a == 'R' ? printf("Stop"):(a == "G"? printf("Go"): (a == "Y"? printf("Slow Down"):printf("Invalid Input");))
+    (toupper)a;
+    a == 'R' ? printf("Stop") : (a == 'G' ? printf("Go") : a printf("Slow Down"));
+ return 0;   
 }

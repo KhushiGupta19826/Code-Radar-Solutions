@@ -4,18 +4,19 @@ int main(){
     char ch;
     scanf("%c", &ch);
     if(isalpha(ch)){
-        // ch =toupper(ch);
+        ch =toupper(ch);
         if(ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U'){
-            printf("Vowel");
+            printf("Vowel\n");
         else{
-            printf("Consonant");
+            printf("Consonant\n");
         }
         }
     }
     else if(isdigit(ch)){
-        printf("Digit");
+        printf("Digit\n");
     }
     else{
-        printf("Special Character");
+        printf("Special Character\n");
     }
+    return 0;
 }

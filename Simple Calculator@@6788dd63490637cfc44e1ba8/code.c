@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main(){
     char ch;
-    int num1 , num2,result;
-    scanf("%d %d %c",&num1,&num2,&ch);
+    double num1 , num2,result;
+    scanf("%ld %ld %c",&num1,&num2,&ch);
     switch (ch){
         case '+':
         result = num1+num2;

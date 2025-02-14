@@ -6,7 +6,8 @@ int main(){
     scanf("%c",&ch);
     switch (ch){
         case '+':
-        printf("%d",num1 + num2);
+        result = num1+num2
+        printf("%d",result);
         break;
         case '-':
         printf("%d",num1 - num2);

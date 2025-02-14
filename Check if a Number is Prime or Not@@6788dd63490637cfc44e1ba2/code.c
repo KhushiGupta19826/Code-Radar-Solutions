@@ -1,14 +1,19 @@
 #include<stdio.h>
+#include<math.h>
 int main(){
-    int a;
-    scanf("%d", &a);
-    if(a<=1){printf("Not Prime");}
-    else if(for(int i =1;i<num;i++){
-        if(a%i !=0){
-            printf("Prime");
-        }
-    })
-    else{
+    int a,isPrime =1;
+    scanf("%d",&a);
+    if(a<=1){
         printf("Not Prime");
     }
+    else{
+        for(int i =2; i <= sqrt(a);i++){
+            if(a%1 == 0){
+                isPrime=0;
+                break;
+            }
+        }
+    }
+    if(isPrime)printf("Prime");
+    else printf("Not Prime");
 }

@@ -2,5 +2,5 @@
 int main(){
     int a,b;
     scanf("%d %d",&a,&b);
-    a/b == int b ? printf("Yes"): printf("No");
+    a/b == b ? printf("Yes"): printf("No");
 }

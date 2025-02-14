@@ -9,13 +9,16 @@ int main(){
         printf("%d",result);
         break;
         case '-':
-        printf("%d",num1 - num2);
+        result = num1-num2;
+        printf("%d",result);
         break;
         case '*':
-        printf("%d",num1*num2);
+        result = num1*num2;
+        printf("%d",result);
         break;
         case '/':
-        printf("%d",num1/num2);
+        result = num1/num2;
+        printf("%d",result);
         break;
         default:
         printf("error");

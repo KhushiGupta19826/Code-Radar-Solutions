@@ -8,7 +8,7 @@ int main() {
     if (a <= 1) {
         printf("Not Prime\n");
     } else {
-        for (int i = 2; i <= sqrt(a); i++) { // Loop from 2 to sqrt(a)
+        for (int i = 2; i <= a**0.5; i++) { // Loop from 2 to sqrt(a)
             if (a % i == 0) {
                 isPrime = 0; // Found a divisor, mark as not prime
                 break;

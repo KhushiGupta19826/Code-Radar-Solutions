@@ -1,27 +1,32 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+int main() {
+    int num1, num2, result;
     char ch;
-    double num1 , num2,result;
-    scanf("%ld %ld %c",&num1,&num2,&ch);
-    switch (ch){
+    scanf("%d %d %c", &num1, &num2, &ch);
+    switch (ch) {
         case '+':
-        result = num1+num2;
-        printf("%ld",result);
-        break;
+            result = num1 + num2;
+            printf("%d", result);
+            break;
         case '-':
-        result = num1-num2;
-        printf("%ld",result);
-        break;
+            result = num1 - num2;
+            printf("%d", result);
+            break;
         case '*':
-        result = num1*num2;
-        printf("%ld",result);
-        break;
+            result = num1 * num2;
+            printf("%d", result);
+            break;
         case '/':
-        result = num1/num2;
-        printf("%ld",result);
-        break;
+            if (num2 != 0) {
+                result = num1 / num2;
+                printf("%d", result);
+            } else {
+                printf("error");
+            }
+            break;
         default:
-        printf("error");
+            printf("error");
     }
 
+    return 0;
 }

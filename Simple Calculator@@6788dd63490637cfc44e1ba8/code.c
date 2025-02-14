@@ -2,8 +2,7 @@
 int main(){
     char ch;
     int num1 , num2,result;
-    scanf("%d %d",&num1,&num2);
-    scanf("%c",&ch);
+    scanf("%d %d %c",&num1,&num2,&ch);
     switch (ch){
         case '+':
         result = num1+num2

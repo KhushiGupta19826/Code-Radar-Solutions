@@ -2,7 +2,7 @@
 int main(){
     int day;
     switch (day){
-        case 1:
+        case '1':
         printf("Monday");
         break;
         case 2:
@@ -25,6 +25,6 @@ int main(){
         break;
         default:
         printf("Invalid");
-        
+
             }
 }

@@ -1,21 +1,21 @@
-#include <stdio.h>
-int main() {
+// Diamond Pattern
     int n;
     scanf("%d", &n);
-    if (n % 2 == 0) {
-        n++;
-    }
-    for (int i = 1; i <= n; i += 2) {
-        for (int j = (n - i) / 2; j > 0; j--)  
+    for(int i = 1; i<=n; i++) {
+        for (int space=1; space<=n-i; space++) {
             printf(" ");
-        for (int k = 1; k <= i; k++)  
+        }
+        for (int j=1; j<=2*i-1; j++) {
             printf("*");
+        }
+        printf("\n");
     }
-    for (int i = n - 2; i >= 1; i -= 2) {
-        for (int j = (n - i) / 2; j > 0; j--)  
+    for(int i = n-1; i>=1; i--) {
+        for (int space = 1; space<=n-i; space++) {
             printf(" ");
-        for (int k = 1; k <= i; k++)  
+        }
+        for (int j=1; j<=2*i-1; j++) {
             printf("*");
+        }
+        printf("\n");
     }
-    return 0;
-}
